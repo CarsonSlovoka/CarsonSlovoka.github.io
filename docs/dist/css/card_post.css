@@ -1,0 +1,43 @@
+{{/*
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_figcaption_css
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_text_blocks
+*/}}
+
+.card-post {
+  /*
+  color: white;
+  border: 1px solid red;
+  */
+}
+
+.card-post img {
+  border-top-left-radius: 1.1em;
+  border-top-right-radius: 1.1em;
+}
+
+.card-post figcaption {
+  border-bottom-left-radius: 1.1rem;
+  border-bottom-right-radius: 1.1rem;
+}
+
+.card-smooth {border-radius: 1.1rem;}
+
+{{/*
+這會有缺點，因為改變了background-color radius就要重新設定，
+背景顏色使用: bg-dark 這些去取代: https://getbootstrap.com/docs/4.0/utilities/colors/
+
+.card-post-black {  bg-dark
+  background-color: #555555;
+  border-top-left-radius: 1.1rem;
+  border-top-right-radius: 1.1rem;
+}
+.card-post-gray {background-color: #e7e7e7; color:black;}  bg-secondary
+.card-post-red {background-color: #f44336;}  bg-danger
+.card-post-blue {background-color: #008CBA;}  bg-primary
+.card-post-green {background-color: #4CAF50;} bg-success
+*/}}
+
+.card-body {
+  padding: 16px;
+}
+

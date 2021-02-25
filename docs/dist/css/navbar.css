@@ -1,0 +1,48 @@
+@media only screen and (max-width: 1248px) {
+    .large-screen-only {
+      display: none;
+    }
+}
+
+.navbar-right {
+  position: fixed; /* 滾動窗口位子還是在同樣地方 */
+  right: 5%;
+  width: 20%;
+  top: 1%;
+  line-height: 24px;
+  /* display: block; 避免和large-screen-only衝突 */
+  background-color: hsla(240, 100%, 90%, 0);
+}
+
+#toc {
+  height: 600px;
+  overflow-y: auto;  /* Trigger vertical scroll    */
+  overflow-x: hidden;   /* Hide the horizontal scroll */
+}
+
+#toc a {
+  text-decoration: none;
+}
+
+.navbar-right a {
+  color: #ccc;
+}
+
+.navbar-right a:hover {
+  color: #0d6efd;
+}
+
+#mindmap-toc:hover {
+    position: relative;
+    top: 15em;
+    /* left: -600px; 在toc_markmap.js中來動態決定*/
+    background-color: rgb(0, 0, 0);
+    display: block;
+    margin: auto;
+    transform: scale(5);
+}
+
+#mindmap-toc:hover ~ #toc {
+  /* hide the toc when #mindmap is hovering. */
+  display: none;
+}
